@@ -8,8 +8,6 @@ import { Route, BrowserRouter } from "react-router-dom";
 import { RootStateType} from "./redux/state";
 
 
-
-
 function App(props: { state: RootStateType }) {
     return (
         <BrowserRouter>
