@@ -1,10 +1,11 @@
 import React from 'react';
 import mp from './MyPosts.module.css';
 import Post from './Post/Post'
+import {ProfilePageType} from "../../../redux/state";
 
-const MyPosts =  (props) => {
+const MyPosts: React.FC<ProfilePageType> =  (props) => {
   
-  let postsElements = props.posts.map((posts)=><Post message={posts.message} likesCount={posts.likesCount} />)
+  let postsElements = props.posts.map((posts)=><Post message={posts.message} likesCount={posts.likesCount}  id={posts.id}/>)
   return (
     <div className={mp.postsBlock}>
       <h1>My posts</h1>

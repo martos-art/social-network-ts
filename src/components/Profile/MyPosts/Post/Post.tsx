@@ -1,7 +1,8 @@
 import React from 'react';
 import prof from './Post.module.css';
+import {PostsType} from "../../../../redux/state";
 
-const Post = (props) => {
+const Post: React.FC<PostsType> = (props) => {
   return (
     <div className={prof.posts}>
       <div className={prof.item}>
